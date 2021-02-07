@@ -15,4 +15,5 @@ export const ThemeContext = createContext<ThemeContextType>({
   setTheme: (Theme) => console.warn("No theme provider"),
 });
 
-export const useTheme = () => useContext(ThemeContext);
+export const useTheme = (): ThemeContextType =>
+  useContext<ThemeContextType>(ThemeContext);

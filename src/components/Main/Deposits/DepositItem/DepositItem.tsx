@@ -125,7 +125,7 @@ const DepositItem: React.FC<IDepositItemProps> = ({
         </PropertyText>
       </Property>
       <MoveInDate>{moveInDate}</MoveInDate>
-      <Rent>{rent}</Rent>
+      <Rent>${rent}</Rent>
       <DepositWrapper>
         <Text>${deposit.amount}</Text>
         <SubTitle>{deposit.type}</SubTitle>
